@@ -1,13 +1,22 @@
-'use strict';
+"use strict";
 
 // 1. printIndices
 function printIndices(items) {
-  // Replace this with your code
+  for (const i in items) {
+    console.log(`${items[i]} ${i}`);
+  }
 }
 
 // 2. everyOtherItem
 function everyOtherItem(items) {
-  // Replace this with your code
+  const array = [];
+
+  for (const i in items) {
+    if (i % 2 === 0) {
+      array.push(items[i]);
+    }
+  }
+  console.log(array);
 }
 
 // 3. smallestNItems
